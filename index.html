@@ -2,21 +2,70 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Projet Final</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#212121" />
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Projet Final</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#212121" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <script language="javascript" type="text/javascript" src="js/vendor/p5.js"></script>
-  <script language="javascript" src="js/vendor/p5.sound.js"></script>
-  <script src="js/sketch.js"></script>
+	<script language="javascript" type="text/javascript" src="js/vendor/p5.js"></script>
+	<script language="javascript" src="js/vendor/p5.sound.js"></script>
+	<script src="js/sketch.js"></script>
+	<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
+	<header>
+		<nav id="main-nav">
+			<div class="wrapper">
+				<ul class=inline>
+					<li><a href="#first-section">Home</a></li>
+					<li><a href="#second-section">Live</a></li>
+					<li><a href="#third-section">Librairy</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<section id="first-section">
+		<div class="content">
+			<h1>Live</h1>
+			<caption>Because we all miss concerts</caption>
+		</div>
+	</section>
+	<section id="second-section">
+		<div class="content circle">
+			<p>Live in (time)</p>
+		</div>
+	</section>
+	<section id="third-section">
+		<div class="content circle">
+			<p>Watch video</p>
+		</div>
+	</section>
+
+
+	<footer>
+	</footer>
 </body>
 
 </html>
