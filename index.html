@@ -55,7 +55,8 @@
 	</section>
 	<section id="second-section">
 		<div class="content circle">
-			<p>Live in (time)</p>
+			<h2>Live in</h2>
+			<h2 id="time"></h2>
 		</div>
 	</section>
 	<section id="third-section">
@@ -63,10 +64,35 @@
 			<p>Watch video</p>
 		</div>
 	</section>
+	<script>
+		var countDownDate = new Date("Jul 2, 2020 21:00:00").getTime();
 
 
-	<footer>
-	</footer>
+		var x = setInterval(function() {
+
+
+			var now = new Date().getTime();
+
+
+			var distance = countDownDate - now;
+
+
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+			document.getElementById("time").innerHTML = days + "d " + hours + "h " +
+				minutes + "m " + seconds + "s ";
+
+
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("time").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
 </body>
 
 </html>

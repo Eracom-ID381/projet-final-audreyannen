@@ -48,6 +48,14 @@ section {
 	opacity: 0.7;
 	text-align: center;
 	line-height: 120px;
+	padding: 5px;
+}
+
+.circle:hover {
+	height: 200px;
+	width: 200px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
 }
 
 #main-nav {
@@ -73,8 +81,20 @@ ul li {
 }
 
 p {
+	text-align: center;
 	color: $textcolor;
 	font-size: 20px;
+	line-height: 110px;
+}
+
+h2 {
+	text-align: center;
+	color: $textcolor;
+	font-size: 20px;
+	line-height: 2px;
+	padding-top: 20px;
+	font-family: sans-serif;
+	font-weight: normal;
 }
 
 a {
